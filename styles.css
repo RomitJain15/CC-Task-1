@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#body-content {
+    display: flex;
+    flex-direction: column;
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+}
+
+#body-content #navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 189, 89, 0.97);
+    padding: 1%;
+}
+
+#navbar #logo {
+    padding-left: 8%;
+}
+
+#navbar #logo img {
+    width: 80%;
+}
+
+#navbar ul {
+    display: flex;
+    margin-left: auto;
+    padding-right: 5.5%;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a {
+    font-size: 95%;
+    color: white;
+    text-decoration: none;
+    padding: 1.5em 1em;
+}
+
+#navbar ul li a:hover {
+    background-color: #ffb340;
+}
+
+#navbar #menu-toggle {
+    display: none;
+}
+
+#navbar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+    display: none;
+}
+
+#body-content .main-content {
+    display: flex;
+    align-items: center;
+    padding: 1.5% 7.5%;
+    background-color: #f7f7f7;
+}
+
+.main-content .header-text {
+    width: 80%;
+}
+
+.main-content .header-text h2 {
+    font-size: 5.75em;
+    font-weight: 700;
+    /* line-height: 100px; */
+}
+
+.header-text h2 span {
+    font-style: normal;
+    color: #aa81f3;
+}
+
+.header-text .main-button-gradient {
+    background: linear-gradient(90deg, #aa81f3 40%, #00b7ff 100%);
+    border-radius: 15px;
+    margin-top: 5%;
+    width: 150px;
+    height: 30px;
+}
+
+.main-content .header-text h6 {
+    color: #9f9f9f;
+    font-size: 2em;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header-text h6 span {
+    color: black;
+    font-weight: 750;
+}
+
+.main-content .right-image {
+    margin-top: 10%;
+}
+.main-content .right-image img {
+    width: 100%;
+}
+
+.graduates-work h4 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #111;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.graduates-work h4 em {
+    font-style: normal;
+    color: #aa81f3;
+}
+
+#body-content .graduates-work .company-logos {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0; 
+}
+
+/*---------------*/
+
+#body-content .graduates-work .company-logos .icon {
+    margin-top: 0px;
+    margin-bottom: 10%;
+}
+
+#body-content .graduates-work .company-logos .icon img {
+    width: 75px;
+    height: auto;
+    margin: 0px 125px;
+}
+
+#body-content .course-block {
+    background-color: #f7f7f7;
+    padding: 0px 50px;
+}
+.course-block .container {
+    margin: 0px 100px;
+    padding: 0px 12px;
+}
+
+.course-block .container .main-heading {
+    padding-top: 5%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.main-heading h4 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #111;
+}
+
+.main-heading h4 em {
+    font-style: normal;
+    color: #aa81f3;
+}
+
+.course-block .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-block .container .about-courses .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+.course label {
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 10em;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 3px solid #aa81f3;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.course input[type="radio"]:checked + label {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    color: #aa81f3;
+}
+
+.course input[type="radio"]:checked + label + .course-info {
+    display: inline;
+    padding-left: 25em;
+}
+
+.course-info-container {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    
+}
+
+.course-info-container .course-img img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 20em;
+    width: 17.5em;
+    padding-right: 50px;
+}
+
+.course-info-container .course-content h4 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+    padding-right: 10px;
+}
+
+.course-info-container .course-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #4a4a4a;
+    font-weight: 200;
+    padding-right: 10px;
+}
+
+.course-info-container .course-content span {
+    font-weight: 14px;
+    font-weight: 600;
+    margin-right: 30px;
+    padding-right: 30px;
+    border-right: 2px solid #111;
+    padding-right: 10px;
+}
+
+.course-info-container .course-content .no-border {
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right: 0px;
+    padding-right: 10px;
+}
+
+.course-info-container .course-content a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #aa81f3;
+    text-decoration: underline !important;
+    padding-top: 5px;
+}
+
+.course-info-container .course-content a:hover {
+    opacity: 0.75;
+}
+
+.course-info {
+    display: none;
+}
+
+/* #python:checked ~ #python-info,
+#web:checked ~ #web-info,
+#ios:checked ~ #ios-info,
+#flutter:checked ~ #flutter-info {
+    display: block; 
+} */
+
+#body-content .testimonial {
+    padding: 50px 0px;
+}
+
+.testimonial .container .row1 h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111;
+}
+
+.row1 h4 em {
+    font-style: normal;
+    color: #aa81f3;
+}
+
+.row2 {
+    display: flex;
+    padding: 5% 10%;
+}
+
+.item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 15px;
+    background-color: #fff;
+    position: relative;
+    justify-content: center;
+}
+
+.testimonial1 {
+    padding: 0px 15px;
+}
+
+.testimonial2 {
+    padding: 0px 15px;
+}
+
+.testimonial3 {
+    padding: 0px 15px;
+}
+
+.item p {
+    font-size: 16px;
+    font-style: italic;
+    color: #4a4a4a;
+    line-height: 25px;
+}
+
+.item h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.item span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #dc8cdb;
+}
+
+.footer {
+    background-image: url(https://www.filepicker.io/api/file/munzM9ViTb6xhbLs3heM);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.footer .container {
+    padding: 0 15px;
+}
+
+.footer .container .row {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 50px 50px 30px 50px;
+}
+
+.footer .container .row .img img {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.row .details {
+    text-align: left;
+}
+
+.row .details h4 {
+    font-size: 62px;
+    font-weight: 900;
+    color: black;
+    line-height: 74px;
+    margin-top: 20px;
+}
+
+.row .details h4 em {
+    color: #aa81f3;
+}
+
+.row .details p {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.row .details h6 {
+    font-weight: 800;
+    color: black;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.row .details li {
+    list-style: none;
+    font-style: italic;
+    font-size: 14px;
+    color: #212338;
+    line-height: 1.42857143;
+}
+
+.footer-end {
+    background-color: #ffbd59;
+    color: #bac1c7;
+    padding: 39px 0 42px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.footer-end .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row .copyright {
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.row .terms-policy {
+    text-align: center;
+}
+
+.row .terms-policy a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.row .links {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar .menu-icon {
+        display: block;
+    }
+
+    .main-content .header-text h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #body-content .graduates-work .company-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row2 {
+        flex-direction: column;
+    }
+
+    .footer .container .row {
+        flex-direction: column;
+
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .main-content .header-text h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content .header-text h2 {
+        font-size: 2.5em;
+    }
+
+}
